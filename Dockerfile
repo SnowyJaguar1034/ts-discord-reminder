@@ -1,11 +1,11 @@
 FROM node:16
 
-WORKDIR /home/ts-discord-reminder
+WORKDIR /app
 
 COPY . .
 
 RUN npm i -g pnpm
 RUN pnpm i
 
-EXPOSE 80
+#EXPOSE 80
 CMD pnpm start

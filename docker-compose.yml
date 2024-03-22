@@ -2,10 +2,10 @@ version: "3.9"
 services:
   ts-discord-reminder:
     build: .
-    working_dir: /home/ts-discord-reminder
-    container_name: ts-discord-reminder
+    #working_dir: /home/ts-discord-reminder
+    container_name: calendar-reminder
     image: ts-discord-reminder
-    ports:
-      - 80:80
-    env_file:
-      - .env
+    #ports:
+    #  - 80:80
+    #env_file:
+    #  - .env
